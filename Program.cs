@@ -1,19 +1,16 @@
-﻿string volba;
-int cena = 0;
-
+﻿using System;
 //Chcete přidat / odebrat DPH?
 Console.WriteLine("Chcete přidat nebo odebrat DPH? [P/O]");
-volba = Console.ReadLine().ToLower();
+string volba = Console.ReadLine().ToLower();
 
 if (volba != "p"&& volba != "o")
 {
     Console.WriteLine("Chybně zadaný formát...");
     
 }
-    
 //Zeptej se uživatele na cenu 
 Console.WriteLine("Jaká je cena produktu?");
-cena = Convert.ToInt32(Console.ReadLine());
+int cena = Convert.ToInt32(Console.ReadLine());
     
 //pdomínka, když uživatel zadá přidat nebo odebrat
 if (volba == "p")
